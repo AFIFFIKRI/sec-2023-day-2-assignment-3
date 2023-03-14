@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DAY 2 - ASSIGNMENT 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Pattaya&family=Vollkorn:wght@800&family=Yaldevi:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .mainpage {
+        position: absolute;
+        width: 595px;
+        height: 850px;
+        background-color: #110f57;
+      }
+
+      .botpicture {
+        position: absolute;
+        width: 600px;
+        height: 335px;
+        left: 0px;
+        bottom: 0px;
+      }
+
+      .stu {
+        position: absolute;
+        width: 110px;
+        height: 33px;
+        left: 45px;
+        top: 40px;
+
+        font-family: "Yaldevi", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+
+        color: #ffffff;
+      }
+
+      .trianglelogo {
+        position: absolute;
+        width: 24px;
+        height: 20px;
+        left: 87px;
+        top: 44px;
+      }
+
+      .triangle1 {
+        position: absolute;
+        width: 24px;
+        height: 20px;
+        left: 0px;
+        top: 0px;
+      }
+      .triangle2 {
+        position: absolute;
+        width: 24px;
+        height: 20px;
+        left: 0px;
+        top: 8.8px;
+      }
+      .triangle3 {
+        position: absolute;
+        width: 24px;
+        height: 20px;
+        left: 4.7px;
+        top: 2.1px;
+      }
+
+      .ios {
+        position: absolute;
+        width: 110px;
+        height: 33px;
+        left: 108px;
+        top: 40px;
+
+        font-family: "Yaldevi", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+
+        color: #ffffff;
+      }
+
+      .nine {
+        position: absolute;
+        width: 110px;
+        height: 33px;
+        left: 146px;
+        top: 42px;
+
+        font-family: "Pattaya", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+
+        color: #00fb82;
+      }
+
+      .worktogether {
+        position: absolute;
+        width: 413px;
+        height: 132px;
+        left: 39px;
+        top: 145px;
+
+        font-family: "Vollkorn";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 66px;
+
+        color: #00fb82;
+      }
+
+      .text1 {
+        position: absolute;
+        width: 329px;
+        height: 165px;
+        left: 39px;
+        top: 308px;
+
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+
+        color: rgba(226, 226, 226, 0.7);
+      }
+
+      .socmedlogo ul li {
+        list-style: none;
+        position: relative;
+        display: inline-block;
+        margin: 0 2px;
+      }
+
+      .googlelogo {
+        padding: 1%;
+        width: 35px;
+        height: 35px;
+        left: 37px;
+        top: 526px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+
+        background: #ffffff;
+      }
+
+      .fblogo {
+        padding: 1%;
+        width: 35px;
+        height: 35px;
+        left: 37px;
+        top: 526px;
+        border-radius: 50%;
+
+        background: #ffffff;
+      }
+
+      .twitterlogo {
+        padding: 1%;
+        width: 35px;
+        height: 35px;
+        left: 37px;
+        top: 526px;
+        border-radius: 50%;
+
+        background: #ffffff;
+      }
+
+      .linkedinlogo {
+        padding: 1%;
+        width: 35px;
+        height: 35px;
+        left: 37px;
+        top: 526px;
+        border-radius: 50%;
+
+        background: #ffffff;
+      }
+
+      .group2 ul li {
+        list-style: none;
+        position: relative;
+        display: inline-block;
+        margin: 0 20px;
+        top: 0px;
+      }
+      .line1 {
+        position: absolute;
+        width: 20px;
+        height: 70px;
+        left: 380px;
+        top: -70px;
+        border-radius: 25px;
+        background-color: #00fb82;
+      }
+
+      .line2 {
+        position: absolute;
+        width: 20px;
+        height: 110px;
+        left: 380px;
+        top: -70px;
+        border-radius: 25px;
+        background-color: #fff500;
+      }
+
+      .line3 {
+        position: absolute;
+        width: 20px;
+        height: 160px;
+        left: 380px;
+        top: -70px;
+        border-radius: 25px;
+        background-color: #00fb82;
+      }
+
+      .line4 {
+        position: absolute;
+        width: 20px;
+        height: 135px;
+        left: 380px;
+        top: -70px;
+        border-radius: 25px;
+        background-color: #fff500;
+      }
+
+      .group3 {
+        list-style: none;
+        position: absolute;
+        display: inline-block;
+        width: 200px;
+        height: 135px;
+        left: 417px;
+        top: 398px;
+        transform: rotate(-10.13deg);
+      }
+
+      .circleline1 ul li {
+        list-style: none;
+        position: relative;
+        display: inline-block;
+        margin: 3px 2px;
+        top: 0px;
+      }
+
+      .circle1 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle2 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle3 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle4 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle5 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle6 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle7 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+
+      .group4 {
+        list-style: none;
+        position: absolute;
+        display: inline-block;
+        width: 200px;
+        height: 135px;
+        left: -13px;
+        top: 635px;
+        transform: rotate(-10.13deg);
+      }
+
+      .circleline2 ul li {
+        list-style: none;
+        position: relative;
+        display: inline-block;
+        margin: 3px 2px;
+        top: 0px;
+      }
+
+      .circle8 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle9 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle10 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle11 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle12 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle13 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle14 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(-10.13deg);
+      }
+      .circle15 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+
+        background: #ffffff;
+        transform: rotate(-10.13deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainpage">
+      <div class="botpicture">
+        <img
+          src="assets/unsplash_g1Kr4Ozfoac.png"
+          alt="the picture of discussion"
+        />
+      </div>
+      <div class="group1">
+        <div class="studios9">
+          <div class="stu">STU</div>
+          <div class="trianglelogo">
+            <div class="triangle1">
+              <img src="assets/triangle1.png" alt="1st triangle logo" />
+            </div>
+            <div class="triangle2">
+              <img src="assets/triangle2.png" alt="2nd triangle logo" />
+            </div>
+            <div class="triangle3">
+              <img src="assets/triangle3.png" alt="3rd triangle logo" />
+            </div>
+          </div>
+          <div class="ios">IOS</div>
+          <div class="nine">9</div>
+        </div>
+        <div class="worktogether">Work Together</div>
+        <div class="text1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </div>
+        <div class="socmedlogo">
+          <ul>
+            <li class="googlelogo">
+              <img src="assets/googlelogo.png" alt="google logo" />
+            </li>
+            <li class="fblogo">
+              <img src="assets/fblogo.png" alt="facebook logo" />
+            </li>
+            <li class="twitterlogo">
+              <img src="assets/twitterlogo.png" alt="twitter logo" />
+            </li>
+            <li class="linkedinlogo">
+              <img src="assets/linkedinlogo.png" alt="linkedin logo" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="group2">
+        <ul>
+          <li><div class="line1"></div></li>
+          <li><div class="line2"></div></li>
+          <li><div class="line3"></div></li>
+          <li><div class="line4"></div></li>
+        </ul>
+      </div>
+      <div class="group3">
+        <div class="circleline1">
+          <ul>
+            <li class="circle1"></li>
+            <li class="circle2"></li>
+            <li class="circle3"></li>
+            <li class="circle4"></li>
+            <li class="circle5"></li>
+            <li class="circle6"></li>
+            <li class="circle7"></li>
+          </ul>
+        </div>
+        <div class="circleline1">
+          <ul>
+            <li class="circle1"></li>
+            <li class="circle2"></li>
+            <li class="circle3"></li>
+            <li class="circle4"></li>
+            <li class="circle5"></li>
+            <li class="circle6"></li>
+            <li class="circle7"></li>
+          </ul>
+        </div>
+        <div class="circleline1">
+          <ul>
+            <li class="circle1"></li>
+            <li class="circle2"></li>
+            <li class="circle3"></li>
+            <li class="circle4"></li>
+            <li class="circle5"></li>
+            <li class="circle6"></li>
+            <li class="circle7"></li>
+          </ul>
+        </div>
+        <div class="circleline1">
+          <ul>
+            <li class="circle1"></li>
+            <li class="circle2"></li>
+            <li class="circle3"></li>
+            <li class="circle4"></li>
+            <li class="circle5"></li>
+            <li class="circle6"></li>
+            <li class="circle7"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="group4">
+        <div class="circleline2">
+          <ul>
+            <li class="circle8"></li>
+            <li class="circle9"></li>
+            <li class="circle10"></li>
+            <li class="circle11"></li>
+            <li class="circle12"></li>
+            <li class="circle13"></li>
+            <li class="circle15"></li>
+          </ul>
+        </div>
+        <div class="circleline2">
+          <ul>
+            <li class="circle8"></li>
+            <li class="circle9"></li>
+            <li class="circle10"></li>
+            <li class="circle11"></li>
+            <li class="circle12"></li>
+            <li class="circle13"></li>
+            <li class="circle14"></li>
+          </ul>
+        </div>
+        <div class="circleline2">
+          <ul>
+            <li class="circle8"></li>
+            <li class="circle9"></li>
+            <li class="circle10"></li>
+            <li class="circle11"></li>
+            <li class="circle12"></li>
+            <li class="circle13"></li>
+            <li class="circle14"></li>
+          </ul>
+        </div>
+        <div class="circleline2">
+          <ul>
+            <li class="circle8"></li>
+            <li class="circle9"></li>
+            <li class="circle10"></li>
+            <li class="circle11"></li>
+            <li class="circle12"></li>
+            <li class="circle13"></li>
+            <li class="circle14"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
